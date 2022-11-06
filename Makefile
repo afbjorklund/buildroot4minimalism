@@ -25,6 +25,10 @@ build: buildroot/.config
 download: buildroot/.config
 	$(MAKE) -C buildroot $(BUILDROOT_OPTIONS) source
 
+.PHONY: toolchain
+toolchain: buildroot/.config
+	$(MAKE) -C buildroot $(BUILDROOT_OPTIONS) sdk
+
 .PHONY: clean
 clean:
 	rm -f buildroot/.config

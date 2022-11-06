@@ -33,6 +33,15 @@ Support files for building, such as a container image with all required build to
 
 Contains helper files for constructing the container image from the rootfs archive.
 
+Toolchains:
+
+`i586-buildroot-linux-uclibc`
+
+```
+61M	i586-buildroot-linux-uclibc_sdk-buildroot.tar.gz
+36M	i586-buildroot-linux-uclibc_sdk-buildroot.tar.xz
+```
+
 Reference board:
 
 `i586` (386)
