@@ -11,6 +11,8 @@ C Library      | uclibc        | libc.so
 Shell          | busybox       | /bin/sh
 Packages       | buildroot     | make
 
+![graph size](graph-size.png)
+
 * `board/`
 
 * `configs/`

@@ -29,3 +29,10 @@ download: buildroot/.config
 clean:
 	rm -f buildroot/.config
 	$(MAKE) -C buildroot $(BUILDROOT_OPTIONS) clean
+
+graph-size.pdf:
+	$(MAKE) -C buildroot graph-size
+	cp buildroot/output/graphs/graph-size.pdf $@
+
+graph-size.png: graph-size.pdf
+	pdftoppm <$< | pnmtopng >$@
