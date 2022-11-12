@@ -17,6 +17,24 @@ Packages       | buildroot     | make
 
 ![graph size](graph-size.png)
 
+```
+BR2_TOOLCHAIN_BUILDROOT_UCLIBC=y
+# BR2_TOOLCHAIN_BUILDROOT_MUSL is not set
+# BR2_TOOLCHAIN_BUILDROOT_GLIBC is not set
+```
+
+```
+BR2_TARGET_ROOTFS_TAR=y
+# BR2_TARGET_ROOTFS_CPIO is not set
+# BR2_TARGET_ROOTFS_EXT2 is not set
+```
+
+```
+# BR2_LINUX_KERNEL is not set
+# BR2_TARGET_SYSLINUX is not set
+# BR2_TARGET_GRUB2 is not set
+```
+
 * `board/`
 
 * `configs/`
